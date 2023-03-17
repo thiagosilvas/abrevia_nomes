@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function abrevia_nome(nome, pattern="X"){
+
+            nomes = nome.split(" ")
+            primeiro_nome = nomes[0]
+            if (nomes.length > 1){
+                segundo_nome = nomes.pop()
+                return abreviacao = primeiro_nome[0] + segundo_nome[0]
+            }else {
+                return abreviacao = primeiro_nome[0] + pattern
+            }
+            
+
+
+        }
+
+        console.log(abrevia_nome("Fausto Silva"))
+        console.log(abrevia_nome("Thiago Silva Oliveira"))
+
+    </script>
+</body>
+</html>
